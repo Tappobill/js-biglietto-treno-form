@@ -34,3 +34,15 @@ input[type="submit" i] {
     font-weight: bold;
     text-align: center;
 }
+
+.container-custom-1{
+    width: 80%;
+    margin: auto;
+    background-color: white;  
+}
+
+h5{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
