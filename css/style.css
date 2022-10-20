@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-custom{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    color: #B91450;
+    border-radius: 10px;    
+}
+
+body{
+    background-color: #B91450;
+}
+
+.form-control{
+    border: 1px solid #B91450;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type="submit" i] {
+   border: 1px solid black;
+   border-radius: 6px;
+   color: #B91450;
+   font-weight: bold;
+}
+
+.form-select{
+    border: 1px solid #B91450;
+    font-weight: bold;
+    text-align: center;
+}

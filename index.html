@@ -6,23 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="title">
+    <h2 class="text-center text-light">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container-custom">
+        <div class="container d-flex justify-content-center mt-4">
+            <form class="row mt-3">
+                <div class="col-4">
+                    <label for="inputEmail4" class="form-label">Nome Cognome</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-4">
+                    <label for="inputEmail4" class="form-label">Km da percorrere</label>
+                    <input type="number" class="form-control" id="inputKm">
+                </div>
+                <div class="col-4">
+                    <label for="inputEmail4" class="form-label">Fascia d'età</label>                    
+                    <select class="form-select" aria-label="Default select example " id="inputEta">
+                        <option selected></option>
+                        <option value="1">Maggiorenne</option>
+                        <option value="2">Minorenne</option>
+                        <option value="3">Over65</option>
+                      </select>
+                </div>            
+            </form>
+        </div>
 
+        <div class="d-flex justify-content-center mt-5">
+            <input type="submit" value="Genera" onclick="recuperoDati(); return false" class="mb-4 me-4 p-1">
+            <input type="submit" value="Annulla" class="mb-4 p-1">
+        </div>
     </div>
-    <form action="">
-        <input type="number" id="inputKm">
-        <input type="number" id="inputEta">
-        <input type="submit" value="Genera" onclick="recuperoDati(); return false">
-    </form>
-
     <div id="boxvalue">
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="jscript/main.js"></script>
 </body>
 
