@@ -1,47 +1,47 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container-custom{
+.container-custom {
     width: 80%;
     margin: auto;
     background-color: white;
     color: #B91450;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
-body{
+body {
     background-color: #B91450;
 }
 
-.form-control{
+.form-control {
     border: 1px solid #B91450;
     font-weight: bold;
     text-align: center;
 }
 
 input[type="submit" i] {
-   border: 1px solid black;
-   border-radius: 6px;
-   color: #B91450;
-   font-weight: bold;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: #B91450;
+    font-weight: bold;
 }
 
-.form-select{
+.form-select {
     border: 1px solid #B91450;
     font-weight: bold;
     text-align: center;
 }
 
-.container-custom-1{
+.container-custom-1 {
     width: 80%;
     margin: auto;
-    background-color: white;  
+    background-color: white;
 }
 
-h5{
+h5 {
     margin-bottom: 4rem;
     margin-top: 2rem;
     font-weight: bold;

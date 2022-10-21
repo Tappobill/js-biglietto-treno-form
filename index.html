@@ -17,15 +17,15 @@
         <div class="d-flex justify-content-center mt-4">
             <form class="row mt-3">
                 <div class="col-4">
-                    <label for="inputEmail4" class="form-label">Nome Cognome</label>
+                    <label for="inputName" class="form-label">Nome Cognome</label>
                     <input type="text" class="form-control" id="inputName">
                 </div>
                 <div class="col-4">
-                    <label for="inputEmail4" class="form-label">Km da percorrere</label>
+                    <label for="inputKm" class="form-label">Km da percorrere</label>
                     <input type="number" class="form-control" id="inputKm">
                 </div>
                 <div class="col-4">
-                    <label for="inputEmail4" class="form-label">Fascia d'età</label>
+                    <label for="inputEta" class="form-label">Fascia d'età</label>
                     <select class="form-select" aria-label="Default select example " id="inputEta">
                         <option selected></option>
                         <option value="1">Maggiorenne</option>
@@ -38,29 +38,35 @@
 
         <div class="d-flex justify-content-center mt-5">
             <input type="submit" value="Genera" onclick="recuperoDati(); return false" class="mb-4 me-4 p-1">
-            <input type="submit" value="Annulla" class="mb-4 p-1">
+            <input type="submit" value="Annulla" onclick="annullaDati()" class="mb-4 p-1">
         </div>
     </div>
 
-    <h2 class="text-center text-light mt-5">IL TUO BIGLIETTO</h2>
-    <div class="container-fluid container-custom-1 mt-4">        
-        <div class="row p-5">
-            <h5 class="mb-0">DETTAGLIO PASSEGGERI</h5>            
-            <div class="col-3 bg-secondary">
-                <h5>NOME PASSEGGERO</h5>
-            </div>
-            <div class="col-3 border-top border-bottom border-dark">
-                <h5>Offerta</h5>
-                <p>Biglietto Standard</p>
-            </div>
-            <div class="col-2 border-top border-bottom border-dark">
-                <h5>Carrozza</h5>
-            </div>
-            <div class="col-2 border-top border-bottom border-dark">
-                <h5>Codice CP</h5>
-            </div>
-            <div id="boxvalue" class="col-2 border-top border-bottom border-dark">
-                <h5>Costo biglietto</h5>
+    <div class="d-none" id="biglietto">
+        <h2 class="text-center text-light mt-5">IL TUO BIGLIETTO</h2>
+        <div class="container-fluid container-custom-1 mt-4">
+            <div class="row p-5">
+                <h5 class="mb-0">DETTAGLIO PASSEGGERI</h5>
+                <div class="col-3 bg-secondary">
+                    <h5 class="mb-0">NOME PASSEGGERO</h5>
+                    <h5 class="mt-0" id="nomePass"></h5>
+                </div>
+                <div class="col-3 border-top border-bottom border-dark">
+                    <h5>Offerta</h5>
+                    <p>Biglietto Standard</p>
+                </div>
+                <div class="col-2 border-top border-bottom border-dark">
+                    <h5>Carrozza</h5>
+                    <p id="carrozza"></p>
+                </div>
+                <div class="col-2 border-top border-bottom border-dark">
+                    <h5>Codice CP</h5>
+                    <p id="codicecp"></p>
+                </div>
+                <div class="col-2 border-top border-bottom border-dark">
+                    <h5>Costo biglietto</h5>
+                    <p id="boxvalue"></p>
+                </div>
             </div>
         </div>
     </div>
